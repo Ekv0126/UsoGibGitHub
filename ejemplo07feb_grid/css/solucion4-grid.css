@@ -1,0 +1,63 @@
+:root{
+    width: 1200px;
+    margin: auto;
+    color: white;
+   
+}
+.contenedor{
+    width: var(--ancho);
+    display: grid;
+    grid-template-areas:
+    'enc enc enc enc enc enc'
+    'f2s1 f2s1 f2s2 f2s2 f2s3 f2s3'
+    'f3s1 f3s1 f3s1 f3s2 f3s2 f3s2'
+    'f4s1 f4s1 f4s1 f4s1 f4s1 f4s2'
+    'f5s1 f5s1 f5s1 f5s1 f5s1 f5s1'
+    'f6s1 f6s2 f6s2 f6s2 f6s2 f6s2';
+    grid-template-rows: 200px 250px 150px 300px 200px 300px;
+    
+}
+.encabezado{
+    grid-area: enc;
+    background-color: black;
+}
+.f2s1{
+    grid-area: f2s1;
+    background-color: orange;
+}
+.f2s2{
+    grid-area: f2s2;
+    background-color: blue;
+}
+.f2s3{
+    grid-area: f2s3;
+    background-color: orange;
+}
+.f3s1{
+    grid-area: f3s1;
+    background-color:red;
+}
+.f3s2{
+    grid-area: f3s2;
+    background-color: green;
+}
+.f4s1{
+    grid-area: f4s1;
+    background-color: orange;
+}
+.f4s2{
+    grid-area: f4s2;
+    background-color: red;
+}
+.f5{
+    grid-area:f5s1;
+    background-color: black;
+}
+.f6s1{
+    grid-area: f6s1;
+    background-color: red;
+}
+.f6s2{
+    grid-area: f6s2;
+    background-color: green;
+}

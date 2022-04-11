@@ -1,0 +1,57 @@
+:root{
+    --ancho: 1000px;
+    --naranja: orange;
+    --gris: gray;
+}
+.contenedor {
+  width: var(--ancho);
+  /*centrar el contenedor*/
+  margin: auto;  
+  display: grid;
+  /*establecer columnas*/
+  grid-template-areas:
+    'encabezado encabezado encabezado encabezado'
+    'pag1 pag2 pag3 pag4'
+    'seccion art art anuncio'
+    'pie pie pie pie';
+  /*Establecer alto de las filas*/  
+  grid-template-rows: 350px 125px 500px 50px;
+
+}
+.encabezado { 
+    grid-area: encabezado; 
+    background-color: yellow;
+}
+.pag1{ 
+    grid-area: pag1; 
+    background-color: var(--naranja);
+}
+.pag2{ 
+    grid-area: pag2; 
+    background-color: var(--gris);
+}
+.pag3{
+    grid-area: pag3; 
+    background-color: var(--naranja);
+}
+.pag4 { 
+    grid-area: pag4; 
+    background-color: var(--gris);
+}
+.seccion{
+    grid-area: seccion;
+    background-color: green;
+}
+.art{
+    grid-area: art;
+}
+.seccion2{
+    grid-area: anuncio;
+    background-color: green;
+}
+.pie{
+    grid-area: pie;
+    background-color: black;
+    color: white;
+}
+

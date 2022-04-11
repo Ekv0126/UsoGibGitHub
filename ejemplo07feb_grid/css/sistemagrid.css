@@ -1,0 +1,49 @@
+.cuadricula{
+    display: grid;
+    /*auto columnas del mismo tamaño*/
+    grid-template-columns: auto auto auto auto;
+    height: 100vh;
+    
+}
+
+section, article{
+    border: 2px solid black;
+}
+
+.cuadricula2{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.cuadricula3{
+    display: grid;
+    grid-template-columns: 200px 400px 800px 100px;
+}
+
+.cuadricula4{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.cuadricula5{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.elemento51{
+    grid-column-start: 1;
+    grid-column-end: 5; /*columna -1*/
+    background-color: red;
+}
+
+.elemento52{
+    grid-row-start: 2;
+    grid-row-end: 5; /* fila - 1*/
+    background-color: aqua;
+}
+.elemento55{
+    grid-column: 4;
+    grid-row-start: 2;
+    grid-row-end: 5; /* fila - 1*/
+
+    background-color: aqua;
+}
