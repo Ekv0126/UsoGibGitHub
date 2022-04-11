@@ -1,0 +1,27 @@
+body{
+    margin: auto;
+    padding: auto;  
+}
+.contenedor{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: 
+    'bar bar bar bar'
+    'na na na na'
+    'car car car car'
+    'mi mi vi vi'
+    'info padep pgalileo PAP'
+    'tel tel tel tel'
+    'pi pi pi pi';
+    grid-template-rows: 35vh 20vh 50vh 50vh 50vh 10vh 10vh;
+}
+.barra{
+    background-color: blue;
+    grid-area: bar;
+    border: 1px solid black;
+}
+.navegacion{
+    grid-area: na;
+    background-color: brown ;
+}
